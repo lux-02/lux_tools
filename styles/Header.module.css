@@ -1,0 +1,39 @@
+.header {
+  width: 100%;
+  min-height: 7vh;
+  background-color: #111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.mainButton {
+  background-color: var(--primary);
+  color: var(--foreground);
+  border-color: var(--primary);
+
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.2s ease;
+  font-weight: bold;
+}
+
+.mainButton:hover {
+  background-color: var(--foreground);
+  border-color: var(--primary);
+  color: var(--background);
+}
+
+.pageTitle {
+  color: #666;
+  padding: 0.5rem 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 1rem;
+  }
+}
