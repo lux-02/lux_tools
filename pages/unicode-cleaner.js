@@ -48,7 +48,7 @@ export default function UnicodeCleaner() {
       highlightedText: input,
       detectedPositions: positions,
     };
-  }, [input]);
+  }, [input, uniList]);
 
   const handleInputChange = (e) => {
     const newInput = e.target.value;
